@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="bannersub-carousel">
-			<img class="banner-logo" src="<?= get_bloginfo('template_url') ?>/dist/img/logo-1.png ?>">
+			<img class="banner-logo" src="<?= get_bloginfo('template_url') ?>/dist/img/logo-1.png">
 			<h2>VOLIMUS</h2>
 		</div>
 	</div>

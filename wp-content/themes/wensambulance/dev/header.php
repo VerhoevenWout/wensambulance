@@ -48,7 +48,7 @@
 	<nav class="row expanded">
 		<div class="columns sm-12">
 			<a href="/" title="home">
-				<img src="<?= get_bloginfo('template_url') ?>/dist/img/logo-2.png ?>">
+				<img src="<?= get_bloginfo('template_url') ?>/dist/img/logo-2.png">
 			</a>
 			<?php wp_nav_menu( array('menu' => 'main-menu')); ?>
 			<div class="button-container">

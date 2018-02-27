@@ -1,5 +1,11 @@
 .introduction{
 	.columns{
+		margin-bottom: 2em;
+
+		@include md{
+			margin-bottom: 0; 
+		}
+
 		text-align: center;
 		display: flex;
 	    flex-direction: column;
