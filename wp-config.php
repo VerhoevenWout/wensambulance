@@ -18,24 +18,52 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'wensambulance_wp');
 
-/** MySQL database username */
-define('DB_USER', 'root');
+if( stristr( $_SERVER['SERVER_NAME'], "loc" ) || stristr( $_SERVER['SERVER_NAME'], "xip.io" ) ) {
 
-/** MySQL database password */
-define('DB_PASSWORD', 'root');
+	// ** MySQL settings - You can get this info from your web host ** //
+	/** The name of the database for WordPress */
+	define('DB_NAME', 'wensambulance_wp');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+	/** MySQL database username */
+	define('DB_USER', 'root');
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+	/** MySQL database password */
+	define('DB_PASSWORD', 'root');
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8');
+
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
+
+} else{
+
+	// ** MySQL settings - You can get this info from your web host ** //
+	/** The name of the database for WordPress */
+	define('DB_NAME', 'wensambulance_be_wensambulance');
+
+	/** MySQL database username */
+	define('DB_USER', 'wensambulance_be_wensambulance');
+
+	/** MySQL database password */
+	define('DB_PASSWORD', 'nIanITXR0goQqHT7V4V3');
+
+	/** MySQL hostname */
+	define('DB_HOST', 'wensambulance.be.mysql');
+
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8');
+
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
+
+}
+
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -46,14 +74,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'n/Y?_+gEr-; l|ywB%ug6=(|eZ{K n5<PgR!Qz6tm}<%wjw4(I]14Y{z&&lUiXw{');
+define('SECURE_AUTH_KEY',  '5xao#PDwlb-73,CS^6:XLt{E&A`R=un`E3vC d+Z~M#1-{eoke|0g3,>--1PF9-R');
+define('LOGGED_IN_KEY',    '<haOs_w8-q)+.<uKLrrmwrm?$+g->&`JqUbWz|&y6?(?+P;}1ks`ug6HV5K+cn+K');
+define('NONCE_KEY',        'nU(|TcZ5`H]+-+-ds|f,9.1rW8tOfSq*r_CB/7{-21M:!RH.J&8eCyFBH$ndy~ph');
+define('AUTH_SALT',        's4-1LU3%FtI,2-cBmo3|kx!:B9533{PakEN&u8B|}^|M5!;DhPj-|?E`l6B;>;U|');
+define('SECURE_AUTH_SALT', 'jGsUT}<D]I?FbJ>93S*Ps]n%)uejnEQ,-:0 6~(IVY|.h+WIMQr+hH5P&ABnuM>|');
+define('LOGGED_IN_SALT',   'aFxo{IM?-K+0@ue_v(a+OD@w1wPNg`L6>]~Z*Bq{zt+|dG%GE~HbANuoK@a8nWeF');
+define('NONCE_SALT',       '.+S:cCPJe3EAr:!_g:_|e+k#BfA2P590q=n:MZZSzahOIN#>iA/uS^lk=M#r0$bv');
 
 /**#@-*/
 
