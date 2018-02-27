@@ -1,0 +1,32 @@
+.block-container{
+	.columns{
+		margin-bottom: 1.5em;
+	}
+    a{
+    	color: $black;
+    	&:hover{
+			h3, p{
+				background-color: $theme;
+				color: $white;
+			}
+    	}
+    }
+	h3,p{
+    	transition: all .2s;
+	}
+	h3{
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin: 0;
+		padding: .5em 2rem;
+	}
+	p{
+		font-size: 1.4rem;
+		padding: .5em 2rem 1em;
+		margin: 0;
+		&:last-child{
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+	}
+}

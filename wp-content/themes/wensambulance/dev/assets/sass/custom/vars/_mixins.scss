@@ -1,0 +1,65 @@
+@mixin transition($time){
+	transition: all $time;
+}
+
+@mixin hover($color){
+	@include transition(.2s);
+	&:hover{
+		cursor: pointer;
+		text-decoration:none;
+		color: $color;
+	}
+}
+@mixin hoverBorder($color){
+	@include transition(.2s);
+	&:hover, &:focus{
+		text-decoration:none;
+		border-color: $color!important;
+	}
+}
+@mixin hoverIcon($color){
+	@include transition(.2s);
+	&:hover, &:focus{
+		text-decoration:none;
+		color: $color!important;
+	}
+}
+
+@mixin selectDisable{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+@mixin selectEnable{ 
+	-webkit-user-select: text;
+	-khtml-user-select: text; 
+	-moz-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+	pointer-events: all;
+}
+
+@mixin animation($animationName){
+    animation: $animationName 0.6s cubic-bezier(.36,.07,.19,.97) both;
+    @keyframes shake {
+		10%{
+		transform: rotate(-10deg);
+		}
+		25%{
+		transform: rotate(10deg);
+		}
+		50%{
+		transform: rotate(-4deg);
+		}
+		75%{
+		transform: rotate(4deg);
+		}
+		100%{
+		transform: rotate(0deg);
+		}
+	}
+}
+

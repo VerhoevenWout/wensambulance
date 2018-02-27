@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------------------
+ WYSIWYG
+---------------------------------------------------------------------------- */
+
+@mixin wysiwyg {
+
+  .wysiwyg {
+    ul,
+    ol,
+    table {
+      color: $wysiwyg-font-color;
+      font-size: $wysiwyg-font-size;
+      line-height: $wysiwyg-lineheight;
+
+      ol,
+      ul {
+        margin: $wysiwyg-list-in-list-margin;
+      }
+    }
+
+    ul,
+    ol {
+      margin: $wysiwyg-list-margin;
+      padding-left: $wysiwyg-list-padding-left;
+    }
+
+    ul {
+      list-style-type: $wysiwyg-ul-list-style-type;
+    }
+
+    ol {
+      list-style-type: $wysiwyg-ol-list-style-type;
+    }
+
+    blockquote {
+      padding: $wysiwyg-blockquote-padding;
+      background-color: $wysiwyg-blockquote-background-color;
+      margin: $wysiwyg-blockquote-margin;
+      color: $wysiwyg-blockquote-color;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: $wysiwyg-table-margin;
+      padding-left: $wysiwyg-table-padding-left;
+    }
+
+    td {
+      border: $wysiwyg-table-border-width solid $wysiwyg-table-border-color;
+      padding: $wysiwyg-td-padding;
+    }
+
+    img { 
+      margin: $wysiwyg-image-margin;
+    }
+
+    p {
+      margin: $wysiwyg-paragraph-margin;
+    }
+   
+  }
+}

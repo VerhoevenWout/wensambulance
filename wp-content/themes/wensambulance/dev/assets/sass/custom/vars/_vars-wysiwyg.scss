@@ -1,0 +1,34 @@
+// wysiwyg defaults
+$wysiwyg-default-margin: 2em 0;
+$wysiwyg-default-padding-left: 2em;
+
+// wysiwyg fonts
+$wysiwyg-font-color: $body-font-color;
+$wysiwyg-font-size: $global-font-size;
+$wysiwyg-lineheight: $paragraph-lineheight;
+
+// wysiwyg blockquote
+$wysiwyg-blockquote-background-color: $dark-gray;
+$wysiwyg-blockquote-color: $white;
+$wysiwyg-blockquote-margin: 2em;
+$wysiwyg-blockquote-padding: 2em;
+
+// wysiwyg tables
+$wysiwyg-table-border-color: $black;
+$wysiwyg-table-border-width: 1px;
+$wysiwyg-td-padding: 1em;
+$wysiwyg-table-margin: $wysiwyg-default-margin;
+$wysiwyg-table-padding-left: $wysiwyg-default-padding-left;
+
+// wysiwyg images
+$wysiwyg-image-margin: $wysiwyg-default-margin;
+
+// wysiwyg paragraphs
+$wysiwyg-paragraph-margin: 1em 0;
+
+// wysiwyg lists
+$wysiwyg-ul-list-style-type: disc;
+$wysiwyg-ol-list-style-type: decimal;
+$wysiwyg-list-margin: $wysiwyg-default-margin;
+$wysiwyg-list-in-list-margin: .5em 0;
+$wysiwyg-list-padding-left: $wysiwyg-default-padding-left;

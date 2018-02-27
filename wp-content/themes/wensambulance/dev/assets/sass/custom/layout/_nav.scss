@@ -1,0 +1,119 @@
+nav{
+	background-color: $white;
+	font-size: 1.4rem;
+	display: flex;
+	align-items: center;
+	height: 60px;
+
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,.2);
+
+	position: fixed;
+    z-index: 9;
+    width: 100%;
+
+    font-weight: 800;
+    text-transform: uppercase;
+
+	img{
+		height: 40px;
+	}
+	ul{
+		display: flex;
+	    flex-direction: column;
+	    align-content: center;
+	    justify-content: center;
+
+		position: fixed;
+		width: 100%;
+		height: 0;
+		top: 0;
+		left: 0;
+		margin: 0;
+		overflow: hidden;
+		background-color: rgba(255,255,255,.9);
+		transition: all .2s;
+
+
+    	@include xmd{
+    		display: block;
+			position: absolute;
+			left: auto;
+			right: 20em;
+			height: 60px;
+			width: auto;
+		}
+
+		li{
+			display: block;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			font-size: 2.3rem;
+
+			@include xmd{
+				display: inline-block;
+				padding: 0 .5em;
+				font-size: 1.3rem;
+			}
+
+			@include transition(.2s);
+			a{
+				display: block;
+			}
+		}
+    	@include xmd{
+			margin-top: 0;
+    		height: auto;
+			background: none;
+			li{
+				float: left;
+			  	&:last-child{
+					border-right: none;
+					margin-right: 0;
+				  	border-bottom: 0;
+				}
+				&:hover{
+					// background-color: $gray1;
+					a{
+						color: $theme;
+					}
+				}
+
+			}
+		}
+		a{
+			color: $black;
+		}
+	}
+	.button-container{
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 1rem 1.5rem;
+
+		display: none;
+    	@include xmd{
+			display: block;
+		}
+	}
+
+	.hamburger{
+		position: absolute;
+		width: 3em;
+		top: 0.3em;
+		right: 2em;
+    	z-index: 9999;
+    	&:hover{
+			opacity: 1;
+		}
+    	@include xmd{
+    		display: none;
+		}
+		.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
+			background: $theme;
+			border-radius: 0;
+			height: 2px;
+			width: 35px;
+		}
+	}
+}

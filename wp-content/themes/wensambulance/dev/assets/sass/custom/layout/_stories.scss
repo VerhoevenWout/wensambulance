@@ -1,0 +1,33 @@
+.stories{
+	background: $gray0;
+	.columns{
+		text-align: center;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    a{
+	    	color: $black;
+	    	&:hover{
+				h3{
+					background-color: $theme;
+					color: $white;
+				}
+	    	}
+	    }
+	    img{
+	    	object-fit: cover;
+	    	height: 250px;
+	    }
+		h3{
+    		transition: all .2s;
+			font-weight: 700;
+			padding: 1em 0;
+			font-size: 2.2rem;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+		.button{
+			margin-top: 1em;
+		}
+	}
+}

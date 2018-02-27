@@ -1,0 +1,59 @@
+#gform_wrapper_1{
+	margin: 0 auto;
+	max-width: 100%;
+
+	@include md{
+		max-width: 75%;
+	}
+	@include xmd{
+		max-width: 50%;
+	}
+}
+#gform_wrapper_2{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+form{
+	input[type=text], input[type=search], button, textarea, select{
+		border: 1px solid $gray1;
+		padding: .5em 1em;
+		margin-bottom: 1em;
+		width: 100%;
+		background: transparent;
+		max-height: 100px;
+	}
+	select{
+		border-radius: 0!important;
+		height: 40px;
+	}
+	h2{
+		margin: 1em 0 .5em;
+		text-align: center;
+		font-size: 2.6rem;
+		@include md{
+			font-size: 3.2rem;
+		}
+	}
+	input[type=submit]{
+		font-size: 1.4rem;
+		display: inline-block;
+		text-align: center;
+		padding: .7em 2em;
+		font-weight: 700;
+		line-height: 1.4em;
+		letter-spacing: -0.012em;
+		text-transform: uppercase;
+		border-radius: 3px;
+		transition: all .2s;
+		width: 100%;
+		margin: 0 0 4em;
+
+		background: $theme;
+		color: $white;
+		&:hover{
+			background: $white;
+			color: $theme;
+		}
+	}
+}

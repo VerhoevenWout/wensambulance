@@ -1,0 +1,13 @@
+// 3. The Grid
+// -----------
+
+$use-flex: true;
+
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-responsive-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-column-align-edge: true;
+$block-grid-max: 8;

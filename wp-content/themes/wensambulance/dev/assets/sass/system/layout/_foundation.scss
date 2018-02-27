@@ -1,0 +1,10 @@
+@import 'grid/grid';
+
+@mixin foundation {
+	@if not $use-flex {
+		@include foundation-grid;
+	}
+	@else {
+		@include foundation-flex-grid;
+	}
+}

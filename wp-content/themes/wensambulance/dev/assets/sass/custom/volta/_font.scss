@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "VoltaFont";
+  src: url('../fonts/VoltaFont.eot');
+  src: url('../fonts/VoltaFont.eot?#iefix') format('eot'),
+    url('../fonts/VoltaFont.ttf') format('truetype'),
+    url('../fonts/VoltaFont.svg#VoltaFont') format('svg');
+}
+
+@mixin icon-styles {
+  font-family: "VoltaFont";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+}
+
+%icon {
+  @include icon-styles;
+}
+
+@function icon-char($filename) {
+  $char: "";
+
+  @if $filename == arrow-full-down {
+    $char: "\E001";
+  }
+  @if $filename == arrow-full-left {
+    $char: "\E002";
+  }
+  @if $filename == arrow-full-right {
+    $char: "\E003";
+  }
+  @if $filename == arrow-full-up {
+    $char: "\E004";
+  }
+
+  @return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+  &:#{$insert} {
+    @if $extend {
+      @extend %icon;
+    } @else {
+      @include icon-styles;
+    }
+    content: icon-char($filename);
+  }
+}
+
+.icon-arrow-full-down {
+  @include icon(arrow-full-down);
+}
+.icon-arrow-full-left {
+  @include icon(arrow-full-left);
+}
+.icon-arrow-full-right {
+  @include icon(arrow-full-right);
+}
+.icon-arrow-full-up {
+  @include icon(arrow-full-up);
+}

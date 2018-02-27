@@ -1,0 +1,28 @@
+{
+  "name": "wp-volta-theme",
+  "version": "0.0.0",
+  "authors": [
+    "web@volta.be"
+  ],
+  "main": "dev/index.php",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "volta",
+    "web"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.volta.be",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {}
+}

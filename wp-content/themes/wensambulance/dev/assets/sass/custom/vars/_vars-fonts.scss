@@ -1,0 +1,81 @@
+/* 
+Font Styles
+*/
+
+.light{
+	font-style: normal;
+	font-weight: 300;
+}
+
+.light-italic{
+	font-style: italic;
+	font-weight: 300;
+}
+
+.book{
+	font-style: normal;
+	font-weight: 400;
+}
+
+.book-italic{
+	font-style: italic;
+	font-weight: 400;
+}
+
+.medium{
+	font-style: normal;
+	font-weight: 500;
+}
+
+.medium-italic{
+	font-size: italic;
+	font-weight: 500;
+}
+
+.semi-bold{
+	font-style: normal;
+	font-weight: 600;
+}
+
+.semi-bold-italic{
+	font-style: italic;
+	font-weight: 600;
+}
+
+.bold{
+	font-style: normal;
+	font-weight: 700;
+}
+
+.bold-italic{
+	font-style: italic;
+	font-weight: 700;
+}
+
+.black{
+	font-style: normal;
+	font-weight: 800;
+}
+
+.black-italic{
+	font-style: italic;
+	font-weight: 800;
+}
+
+
+/* 
+Fonts
+
+List your fonts in following format:
+
+Titel : styles sperate by ,
+
+A less value from the font you want to list.
+
+*/
+
+/* 
+Open Sans : .light,.light-italic,.normal,.normal-italic,.bold,.bold-italic,.extra-bold,.extra-bold-italic
+*/
+
+$whitney: "Whitney SSm A", "Whitney SSm B";

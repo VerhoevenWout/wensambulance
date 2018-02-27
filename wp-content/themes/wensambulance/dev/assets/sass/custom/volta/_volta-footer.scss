@@ -1,0 +1,29 @@
+/* -------------------------------------------------------------------------
+ Volta Footer
+---------------------------------------------------------------------------- */
+
+p.volta {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  z-index: 9999;
+  right: 0;
+  line-height: 1;
+
+  a {
+		display: block;
+		text-indent: -9999px;
+		width: 16px;
+		height: 16px;
+		background: url(../img/volta.gif) top left no-repeat;
+		filter: alpha(opacity=60);
+		opacity: 0.6;
+
+		&:hover {
+			background: url(../img/volta-bl.gif) center bottom no-repeat;
+		}
+	}
+}

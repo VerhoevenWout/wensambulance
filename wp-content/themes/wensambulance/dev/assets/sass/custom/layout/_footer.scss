@@ -1,0 +1,37 @@
+footer{
+	text-align: center;
+	background-color: $theme;
+	color: $white;
+	font-size: 1.2rem;
+	padding: 1em 0;
+	img{
+		max-width: 15rem;
+		padding: 0.5em 0;
+	}
+	p{
+		margin: 0;
+	}
+
+	.left{
+		float: left;
+		text-align: left;
+	}
+	.right{
+		float: right;
+		text-align: right;
+	}
+	.menu-menu-1-container{
+		padding: 0.3em 0;
+		ul{
+			margin: 0;
+			color: white;
+		}
+		li{
+			display: inline-block;
+			padding: 0 0 0 1em;
+			a{
+				color: white;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+// ----------------------------------------------------
+// JAVASCRIPT CHANGING STATE
+.menu-is-active{
+	height: 100vh!important;
+}
+.menu-in-view{
+	box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+}
+
+.nav-up {
+	transform: translateY(-60px);
+}

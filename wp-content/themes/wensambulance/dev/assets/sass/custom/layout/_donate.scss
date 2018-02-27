@@ -1,0 +1,28 @@
+.donate{
+	background-size: cover;
+	background-attachment: fixed;
+	.columns{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.text-container{
+		background-color: rgba(255,255,255,.8);
+		color: $black;
+		padding: 3em 1.5em;
+		max-width: 20em;
+		border-radius: 3px;
+		text-align: center;
+		span{
+			font-weight: 700;
+			font-size: 2rem;
+		}
+	}
+	a{
+		margin: 3em;
+		font-size: 2rem;
+	}
+}
+.donate-bg-1{
+	background-image: url('/wp-content/themes/wensambulance/dist/img/donate-background.jpg');
+}
